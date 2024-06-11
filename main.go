@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	// "runtime"
 
-	"github.com/godesde0/ejercicios"
+	// "github.com/godesde0/ejercicios"
+	"github.com/godesde0/teclado"
 )
 
 func main() {
@@ -32,7 +32,12 @@ func main() {
 		default:
 			fmt.Println("El sistema operativo es", os)
 		}
+
+		numero, mensaje := ejercicios.CuentaString("+500")
+
+		fmt.Println(numero)
+
+		fmt.Println(mensaje)
 	*/
-	numero, mensaje := ejercicios.CuentaString("150")
-	fmt.Println("El número ", numero, mensaje)
+	teclado.IngresoNumeros()
 }
