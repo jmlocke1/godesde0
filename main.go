@@ -5,7 +5,7 @@ import (
 
 	// "github.com/godesde0/ejercicios"
 
-	"github.com/godesde0/iteraciones"
+	"github.com/godesde0/ejercicios"
 )
 
 func main() {
@@ -40,6 +40,7 @@ func main() {
 
 		fmt.Println(mensaje)
 		teclado.IngresoNumeros()
+		iteraciones.Iterar()
 	*/
-	iteraciones.Iterar()
+	ejercicios.Multiplica()
 }
