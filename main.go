@@ -5,7 +5,8 @@ import (
 
 	// "github.com/godesde0/ejercicios"
 
-	"github.com/godesde0/ejercicios"
+	//"github.com/godesde0/ejercicios"
+	"github.com/godesde0/ficheros"
 )
 
 func main() {
@@ -41,6 +42,8 @@ func main() {
 		fmt.Println(mensaje)
 		teclado.IngresoNumeros()
 		iteraciones.Iterar()
+		ejercicios.Multiplica()
 	*/
-	ejercicios.Multiplica()
+	// ficheros.SumaTabla()
+	ficheros.LeoArchivo()
 }
