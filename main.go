@@ -4,7 +4,8 @@ import (
 	// "runtime"
 
 	// "github.com/godesde0/ejercicios"
-	"github.com/godesde0/teclado"
+
+	"github.com/godesde0/iteraciones"
 )
 
 func main() {
@@ -38,6 +39,7 @@ func main() {
 		fmt.Println(numero)
 
 		fmt.Println(mensaje)
+		teclado.IngresoNumeros()
 	*/
-	teclado.IngresoNumeros()
+	iteraciones.Iterar()
 }
