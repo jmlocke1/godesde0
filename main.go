@@ -6,7 +6,9 @@ import (
 	// "github.com/godesde0/ejercicios"
 
 	//"github.com/godesde0/ejercicios"
-	"github.com/godesde0/ficheros"
+	"fmt"
+
+	"github.com/godesde0/funciones"
 )
 
 func main() {
@@ -45,5 +47,12 @@ func main() {
 		ejercicios.Multiplica()
 	*/
 	// ficheros.SumaTabla()
-	ficheros.LeoArchivo()
+	// ficheros.LeoArchivo()
+	// funciones.Calculos()
+	// funciones.LlamarClosure()
+	// funciones.Exponencia(2)
+
+	for i := 11; i < 30; i++ {
+		fmt.Println("Factorial de ", i, " : ", funciones.Factorial(i))
+	}
 }
