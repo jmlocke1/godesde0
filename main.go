@@ -1,14 +1,7 @@
 package main
 
 import (
-	// "runtime"
-
-	// "github.com/godesde0/ejercicios"
-
-	//"github.com/godesde0/ejercicios"
-	"fmt"
-
-	"github.com/godesde0/funciones"
+	arraysslices "github.com/godesde0/arrays_slices"
 )
 
 func main() {
@@ -51,8 +44,10 @@ func main() {
 	// funciones.Calculos()
 	// funciones.LlamarClosure()
 	// funciones.Exponencia(2)
-
-	for i := 11; i < 30; i++ {
-		fmt.Println("Factorial de ", i, " : ", funciones.Factorial(i))
-	}
+	/*
+		for i := 11; i < 30; i++ {
+			fmt.Println("Factorial de ", i, " : ", funciones.Factorial(i))
+		}
+	*/
+	arraysslices.Capacidad()
 }
