@@ -1,8 +1,6 @@
 package main
 
-import (
-	arraysslices "github.com/godesde0/arrays_slices"
-)
+import "github.com/godesde0/mapas"
 
 func main() {
 	// variables.MuestroEnteros()
@@ -49,5 +47,6 @@ func main() {
 			fmt.Println("Factorial de ", i, " : ", funciones.Factorial(i))
 		}
 	*/
-	arraysslices.Capacidad()
+	// arraysslices.Capacidad()
+	mapas.MostrarMapas()
 }
