@@ -1,6 +1,9 @@
 package main
 
-import "github.com/godesde0/mapas"
+import (
+	e "github.com/godesde0/ejer_interfaces"
+	"github.com/godesde0/modelos"
+)
 
 func main() {
 	// variables.MuestroEnteros()
@@ -48,5 +51,10 @@ func main() {
 		}
 	*/
 	// arraysslices.Capacidad()
-	mapas.MostrarMapas()
+	// mapas.MostrarMapas()
+	// users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+	Marta := new(modelos.Mujer)
+	e.HumanosRespirando(Marta)
 }
