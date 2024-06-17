@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/godesde0/goroutines"
+	"github.com/godesde0/middleware"
 )
 
 func main() {
@@ -60,13 +58,18 @@ func main() {
 	// e.HumanosRespirando(Marta)
 	// defer_panic.VemosDefer()
 	// defer_panic.EjemploPanic()
-	canal1 := make(chan bool)
-	canal2 := make(chan bool)
-	go goroutines.MiNombreLentoooo("José Miguel", canal1)
-	go goroutines.MiNombreLentoooo("Paquito Chocolatero", canal2)
-	fmt.Println("Estoy aquí")
-	<-canal1
-	<-canal2
+	// canal1 := make(chan bool)
+	// canal2 := make(chan bool)
+	// go goroutines.MiNombreLentoooo("José Miguel", canal1)
+	// go goroutines.MiNombreLentoooo("Paquito Chocolatero", canal2)
+	// defer func() {
+	// 	<-canal1
+	// 	<-canal2
+	// }()
+	// fmt.Println("Estoy aquí")
+
 	// var x string
 	// fmt.Scanln(&x)
+	// webserver.MiWebServer()
+	middleware.MiMiddleware()
 }
