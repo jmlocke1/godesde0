@@ -1,6 +1,10 @@
 package main
 
-import "github.com/godesde0/defer_panic"
+import (
+	"fmt"
+
+	"github.com/godesde0/goroutines"
+)
 
 func main() {
 	// variables.MuestroEnteros()
@@ -54,6 +58,15 @@ func main() {
 	// e.HumanosRespirando(Pedro)
 	// Marta := new(modelos.Mujer)
 	// e.HumanosRespirando(Marta)
-	defer_panic.VemosDefer()
-	defer_panic.EjemploPanic()
+	// defer_panic.VemosDefer()
+	// defer_panic.EjemploPanic()
+	canal1 := make(chan bool)
+	canal2 := make(chan bool)
+	go goroutines.MiNombreLentoooo("José Miguel", canal1)
+	go goroutines.MiNombreLentoooo("Paquito Chocolatero", canal2)
+	fmt.Println("Estoy aquí")
+	<-canal1
+	<-canal2
+	// var x string
+	// fmt.Scanln(&x)
 }
